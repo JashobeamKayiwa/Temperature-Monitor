@@ -2,8 +2,8 @@
 #include <SoftwareSerial.h>
 
 const int tempSensorPin = A0; // Connect the TMP36's output to A0
-const int rxPin = 0;
-const int txPin = 1;
+const int rxPin = 10;
+const int txPin = 11;
 
 SoftwareSerial mySerial(rxPin, txPin);
 
