@@ -7,7 +7,10 @@ const unsigned long debounceDelay = 50; // milliseconds
 volatile bool buttonPressed = false;
 volatile unsigned long lastDebounceTime = 0;
 
-SoftwareSerial mySerial(10, 11);
+const int rxPin = 0;
+const int txPin = 1;
+
+SoftwareSerial mySerial(rxPin, txPin);
 
 ISR(TIMER1_COMPA_vect) {
   unsigned long now = millis();
