@@ -1,8 +1,8 @@
 #include <EEPROM.h>
 #include <SoftwareSerial.h>
 
-const int rxPin = 10;
-const int txPin = 11;
+const int rxPin = 0;
+const int txPin = 1;
 
 SoftwareSerial mySerial(rxPin, txPin);
 
