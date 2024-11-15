@@ -4,8 +4,8 @@
 // Adjust the I2C address if necessary
 LiquidCrystal_I2C lcd(0x27, 16, 2); // Set the I2C address and LCD dimensions
 
-const int rxPin = 10;
-const int txPin = 11;
+const int rxPin = 0;
+const int txPin = 1;
 
 SoftwareSerial mySerial(rxPin, txPin);
 
