@@ -7,8 +7,8 @@ const unsigned long debounceDelay = 50; // milliseconds
 volatile bool buttonPressed = false;
 volatile unsigned long lastDebounceTime = 0;
 
-const int rxPin = 0;
-const int txPin = 1;
+const int rxPin = 10;
+const int txPin = 11;
 
 SoftwareSerial mySerial(rxPin, txPin);
 
